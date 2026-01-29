@@ -1,5 +1,6 @@
 from mcp.server.fastmcp import FastMCP
 from services.file_service import FileService  # 复用之前的服务类
+from services.git_service import GitService
 from services.math_service import MathService
 from services.system_service import SystemService
 from services.web_search_service import WebSearch
@@ -12,6 +13,7 @@ FileService().register_tools(hub)
 SystemService().register_tools(hub)
 MathService().register_tools(hub)
 WebSearch().register_tools(hub)
+GitService().register_tools(hub)
 
 if __name__ == "__main__":
     # 使用 sse 运行模式

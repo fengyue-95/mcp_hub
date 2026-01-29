@@ -24,6 +24,6 @@ Is there anything specific you'd like to do with this project?
 
 
 ```bash
-#导出你在 .py 文件里真正 import 过的包。# mcp_hub
+#导出你在 .py 文件里真正 import 过的包。# mcp_hub  2313123123
 pipreqs . --encoding=utf8 --force  
 ```
