@@ -8,7 +8,7 @@ import time
 
 class WebSearch:
     def register_tools(self, mcp: FastMCP):
-        @mcp.tool(name="chrome_fetch")
+        @mcp.tool(name="web_search")
         async def chrome_fetch(url: str) -> str:
             """
             使用真实 Chrome 浏览器打开网页并提取文本。
