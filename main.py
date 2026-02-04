@@ -1,7 +1,7 @@
 from mcp.server.fastmcp import FastMCP
 
 from services.calendar_service import CalendarService
-from services.file_service import FileService  # 复用之前的服务类
+# from services.file_service import FileService  # 复用之前的服务类
 from services.git_service import GitService
 from services.math_service import MathService
 from services.system_service import SystemService
@@ -11,7 +11,7 @@ from services.web_search_service import WebSearch
 hub = FastMCP("HTTP-MCP-Hub")
 
 # 注册子服务工具
-FileService().register_tools(hub)
+# FileService().register_tools(hub)
 SystemService().register_tools(hub)
 MathService().register_tools(hub)
 WebSearch().register_tools(hub)
