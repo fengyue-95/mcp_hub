@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-REPO_SSH="git@github.com:fengyue-95/mcp_hub.git"
+REPO_URL="https://github.com/fengyue-95/mcp_hub.git"
 REPO_DIR="mcp_hub"
 BRANCH="main"
 
@@ -12,7 +12,7 @@ if [ -d "$REPO_DIR/.git" ]; then
   git -C "$REPO_DIR" pull --ff-only origin "$BRANCH"
 else
   echo "Cloning repo..."
-  git clone -b "$BRANCH" "$REPO_SSH" "$REPO_DIR"
+  git clone -b "$BRANCH" "$REPO_URL" "$REPO_DIR"
 fi
 
 cd "$REPO_DIR"
